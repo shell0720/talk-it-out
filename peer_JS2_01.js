@@ -59,15 +59,17 @@ while (i > 0) {
 }
 //step11
 function convert (val) {
-	val.toString();
+
+	val = val.toString();
 	if (val.length> 1) {
-		val.slice(0); 
+		val = val.substring(1,val.length); 
+
 	}
 	return val;
 }
 //step12
 console.log("before step 12: " + value);
-convert(value); 
+value = convert(value); 
 
 //step13
 console.log(value);
